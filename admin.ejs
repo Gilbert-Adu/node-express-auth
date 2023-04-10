@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<header>
+</header>
+
+<main>
+  <div>
+    <h1>This is Admin screen</h1>
+    <p>Welcome to templating using EJS</p>
+
+    <h2>Variable</h2>
+    <ul>
+        <% cars.forEach(function(car) { %>
+          <li>
+            <strong><%= car.make %></strong>
+            representing <%= car.model %>,
+            born <%= car.year %>
+          </li>
+        <% }); %>
+      </ul>
+  <a href="http://localhost:8000/admin/getcars">click here</a>
+  </div>
+</main>
+
+<footer>
+</footer>
+
+</body>
+</html>
